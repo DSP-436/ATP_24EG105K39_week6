@@ -18,7 +18,7 @@ app.use("/emp-api", empRoute);
 //DB connection
 const connectDB = async () => {
   try {
-    await connect("mongodb://localhost:27017/empdb");
+    await connect("mongodb+srv://DSP:DSPreddy39@cluster0.shku5fm.mongodb.net/?appName=Cluster0");
     console.log("DB connected");
     app.listen(9000, () => console.log("server listening on port 9000.."));
   } catch (err) {
