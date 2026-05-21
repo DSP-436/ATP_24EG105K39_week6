@@ -17,7 +17,7 @@ function ListOfEmps(empObj) {
 
   useEffect(() => {
     async function getEmps() {
-      let res = await fetch("http://localhost:9000/emp-api/employees");
+      let res = await fetch(`${import.meta.env.VITE_API_URL}/emp-api/employees`);
       if (res.status === 200) {
         let resObj = await res.json();
         setEmps(resObj.payload);

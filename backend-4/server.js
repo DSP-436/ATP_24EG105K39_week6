@@ -7,7 +7,7 @@ const app = exp();
 //add cors middleware
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["http://localhost:5173", "https://atp-24-eg-105-k39-week6.vercel.app"],
   }),
 );
 //body parser middleware
